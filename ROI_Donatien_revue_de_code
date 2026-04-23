@@ -1,0 +1,3 @@
+Dans l'ensemble, le repo est très bon. Toutes les bonnes pratiques de développement sont bien respectées et la structure du repo est claire grâce au Readme.
+
+Dans le fichier requirements.txt, il aurait été sympathique d'autoriser également des versions plus anciennes des packages mentionnés.
