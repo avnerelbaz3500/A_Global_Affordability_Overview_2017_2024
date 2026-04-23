@@ -1,3 +1,28 @@
-Dans l'ensemble, le repo est très bon. Toutes les bonnes pratiques de développement sont bien respectées et la structure du repo est claire grâce au Readme.
+REVUE DE CODE - ROI Donatien, ENSAE - 23/04/2026
 
-Dans le fichier requirements.txt, il aurait été sympathique d'autoriser également des versions plus anciennes des packages mentionnés.
+
+Je compte dans ce fichier réaliser une revue de code du dépôt Git https://github.com/avnerelbaz3500/A_Global_Affordability_Overview_2017_2024 réalisé par Avner El Baz, Kwame Mbobda-Kuate, Paco Goze, et Youssef Hamzaoui.
+
+
+
+Dans l'ensemble, le repo est très bon, et nous allons détailler pourquoi et comment ci-dessous.
+
+
+Pour ce qui et de l'utilisation de Git, dans le fichier requirements.txt, il aurait été sympathique d'autoriser également des versions plus anciennes des packages mentionnés. A part ça, la présence d'un fichier gitignore, README et LICENSE est bienvenue.
+On notera toutefois que le fichier README ne fait pas mention des deux autres, et ne mentionne pas non plus le fichier requirements.txt.
+
+Concernant la qualité du code en lui-même, je ne trouve rien à redire. Le code est propre, met en place une modularité (un script principal qui appelle des modules), il y a clairement un formatter/linter (ruff en l'occurrence) en place donc c'est très bien.
+De plus, le typage python est pris en compte avec mypy.
+
+Ensuite, pour la gestion des données, on a une gestion structurée des données, des possibilités de requêtes analytiques et une reproductibilité locale ce qui est très bien, mais il est regrettable de voir la présence du fichier price_of_healthy_diet_clean.csv
+dans le dossier data car on a des données versionnées directement dans le repo.
+
+Le déploiement est vraiment solide (c'est même sans doute le plus gros point fort du projet qui n'en manquait pas déjà), et la présence de 39 tests couvrant les data, les plots et les figures est très enthousiasmante.
+
+Enfin, concernant la documentation technique en général, il aurait été bon d'exliquer les choix qui ont été faits (Ruff, uv, CI/CD), de mettre un docstrings pour expliquer les modules,
+aussi je pense que l'architecture du repo aurait pu être mieux détaillée dans le fichier README.
+
+
+En conclusion, il s'agit d'un projet vraiment solide, qui coche toutes les cases de la checklist des bonnes pratiques de développement, sur lequel je ne vois pas de véritable défaut. 
+Si on voulait en pointer un en particulier, je dirais peut-être que la structure du repo aurait pu être plus claire pour qui veut s'en servir ou n'importe quel nouvel utilisateur.
+
