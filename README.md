@@ -55,7 +55,7 @@ This project follows a GitOps approach to deployment.
 
 **Continuous Integration** — on every push to `master`, GitHub Actions automatically builds and pushes a new Docker image to DockerHub. A separate workflow runs `ruff` linting and `pytest` on every push and pull request.
 
-**Continuous Deployment** — the application is deployed on SSPCloud via Kubernetes. [ArgoCD](https://argo-cd.readthedocs.io/en/stable/) continuously monitors the [GitOps repository](https://github.com/Youssef75ensae/application-deployment) and automatically redeploys the application upon any configuration change.
+**Continuous Deployment** — the application is deployed on SSPCloud via Kubernetes. [ArgoCD]([https://argo-cd.readthedocs.io/en/stable/](https://food-affordability-django75.lab.sspcloud.fr/) continuously monitors the [GitOps repository](https://github.com/Youssef75ensae/application-deployment) and automatically redeploys the application upon any configuration change.
 
 ---
 
